@@ -6,18 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Column card</title>
     <link rel="stylesheet" href="./css/all.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
 </head>
 <body>
     <div class="container">
 
-     <nav style="background-color: hsl(184, 100%, 22%) !important;">
-        <div class="flexBox">
+     <nav style="background-color: hsl(184, 100%, 22%) !important;" class="nav">
+        <div class="flexBox nav-menu">
             <div class="nav-brand">
                 <h1>zaine</h1>
             </div>
             <a href="./grid/grid.html" class="seep">grid</a>
-            <a href="./index.html" class="seep">index</a>
+            <a href="./index.html" class="seep">index</a>            
         </div>
+
+        <div class="toggle-collapse">
+        <div class="toggle-icons">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </nav>
 
         <div class="carrier">
@@ -52,5 +67,9 @@
             </div>
         </div>
     </div>
+
+    <script src="./javascript/Jquery3.6.0.min.js"></script>
+
+    <script src="./javascript/toggle.js"></script>
 </body>
 </html>

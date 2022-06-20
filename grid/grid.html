@@ -6,16 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
     <link rel="stylesheet" href="../css/all.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body class="grid-body">
-    <nav>
-        <div class="flexBox">
-            <div class="nav-brand">
-                <h1>zaine</h1>
-            </div>
-            <a href="./grid.html">grid</a>
-            <a href="../index.html">index</a>
+    <nav class="nav">
+      <div class="nav-menu flexBox">
+        <div class="nav-brand">
+          <h1>zaine</h1>
         </div>
+        <a href="./grid.html">grid</a>
+        <a href="../index.html">index</a>
+      </div>
+
+      <div class="toggle-collapse">
+        <div class="toggle-icons">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </nav>
 
     <div class="grid-container">
@@ -25,5 +40,9 @@
       <div class="item4"></div>
       <div class="item5"></div>
     </div>
+
+    <script src="../javascript/Jquery3.6.0.min.js"></script>
+
+    <script src="../javascript/toggle.js"></script>
   </body>
 </html>

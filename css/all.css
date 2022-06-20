@@ -19,7 +19,7 @@ nav {
 
 .flexBox {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
@@ -27,7 +27,7 @@ nav {
 
 nav h1{
     font-size: 1.9rem;
-        padding: 0.7rem 0;
+        padding: 0.5rem 0;
         display: block;
         letter-spacing: 0.5rem;
         -webkit-text-fill-color: transparent;
@@ -176,6 +176,31 @@ background-color: rgb(27, 154, 233);}
 background-color: rgb(27, 154, 233);
 }
 
+.nav .toggle-collapse {
+    position: absolute !important;
+    top: 0;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0;
+
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.5rem;
+    border: 2px solid white;
+    color: white;
+    padding: 0.2rem 0.5rem;
+}
+
+.collapse {
+    height: 12rem !important;
+}
 
 
 
@@ -183,9 +208,6 @@ background-color: rgb(27, 154, 233);
 
 
 @media only screen and (max-width: 940px){
-    .flexBox{
-        flex-direction: column;
-    }
 
     .container{
         width: 100%;
@@ -218,6 +240,15 @@ background-color: rgb(27, 154, 233);
 }
 
 @media only screen and (max-width: 500px){
+    nav .toggle-collapse {
+            display: initial !important;
+    
+    }
+
+    .flexBox {
+            flex-direction: column;
+        }
+
     .carrier div{
         width: 100%;
     }
